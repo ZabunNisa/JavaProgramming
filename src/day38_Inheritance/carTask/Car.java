@@ -1,6 +1,6 @@
-package day38_Inheritance.CarTask;
+package day38_Inheritance.carTask;
 
-public class Car {
+public class Car{
 
 public String brand, model;
 public int year; // public acn't set conditions
@@ -8,6 +8,7 @@ public double price;
 public String colour;
 public int miles;
 
+//Constructor:
     public Car(String brand, String model, int year, double price, String colour, int miles) {
         this.brand = brand;
         this.model = model;
