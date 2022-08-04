@@ -30,7 +30,6 @@ public class Rectangle extends Shape{
             this.width = width;
     }
 
-
     //cnstructors
     public Rectangle( double length, double width) {
         super("Rectangle");
@@ -38,6 +37,33 @@ public class Rectangle extends Shape{
         setLength(length);
         setWidth(width);
 
+    }
+
+
+
+    //overide:
+
+
+    @Override
+    public double area() {
+        return length * width;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2 * (length + width);
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + length +
+                ", width=" + width +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+
+
+                '}';
     }
 }
 /*Rectangle extends Shape:
