@@ -81,15 +81,6 @@ public class Person {
                 toString()
 
 
-
-
-
-
-    5. Create a sub class of Employee named Teacher
-
-            Override the work method
-
-
     6. Create a sub class of Person named Student
 
             Extra variables:
