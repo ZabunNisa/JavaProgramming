@@ -1,6 +1,6 @@
 package day39_Recap.ShapeTask;
 
-public class Rectangle {
+public class Rectangle extends Shape{
     private double length, width;
 
     public double getLength() {
@@ -28,6 +28,16 @@ public class Rectangle {
         }
 
             this.width = width;
+    }
+
+
+    //cnstructors
+    public Rectangle( double length, double width) {
+        super("Rectangle");
+
+        setLength(length);
+        setWidth(width);
+
     }
 }
 /*Rectangle extends Shape:
