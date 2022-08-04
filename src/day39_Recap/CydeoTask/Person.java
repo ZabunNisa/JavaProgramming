@@ -80,17 +80,6 @@ public class Person {
                 sleep()
                 toString()
 
-    2. Create a sub class of Person named Employee:
-            Extra variables:
-                employeeId, jobTitle, salary
-
-            Encapsulate all the fields
-
-            Add a constructor to set all the fields
-
-            Methods:
-                work()
-                toString()
 
     3. Create a sub class of Employee named Tester
 
