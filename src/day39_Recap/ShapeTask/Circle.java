@@ -2,7 +2,7 @@ package day39_Recap.ShapeTask;
 
 public class Circle extends Shape{
 
-    public double radius;
+    private double radius;
     public static double pi= 3.14;
 
     public double getRadius() {
@@ -22,9 +22,30 @@ public class Circle extends Shape{
 
     //constructor:
 
-    public Circle( String name, double radius) {
-        super(name);
+    public Circle( double radius) {
+        super("Cicrcle");
         setRadius(radius);
+    }
+
+    @Override
+    public double area() {
+        return radius* radius* pi;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2*radius*pi;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", pi='" + pi + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+
     }
 }
 

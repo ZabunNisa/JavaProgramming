@@ -45,10 +45,7 @@ public class Shape {
         return 0; //implimentation
     }
 
-    public double perimeter(){
-
-        return 0;
-
+    public double perimeter(){return 0;
     }
 
     @Override //ths will be inhertied by other classes
