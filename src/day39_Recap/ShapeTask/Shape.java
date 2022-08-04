@@ -51,6 +51,17 @@ public class Shape {
 
     }
 
+    @Override //ths will be inhertied by other classes
+    public String toString() {
+        return "Shape{" +
+                " name='" + name + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
+    /*
+    *
+    * public String toString method diff para*/
 
 }
 /*    Shape:
