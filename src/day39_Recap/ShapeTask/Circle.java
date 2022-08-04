@@ -23,7 +23,7 @@ public class Circle extends Shape{
     //constructor:
 
     public Circle( double radius) {
-        super("Cicrcle");
+        super("Circle");
         setRadius(radius);
     }
 
