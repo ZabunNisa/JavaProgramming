@@ -3,14 +3,14 @@ package day39_Recap.CydeoTask;
 public class Employee extends Person{
 
     private int employeeID;
-    private String jobTitile;
+    private String jobTitle;
     private double salary;
 
 
-    public Employee(String name, int age, char gender, int employeeID, String jobTitile, double salary) {
+    public Employee(String name, int age, char gender, int employeeID, String jobTitle, double salary) {
         super(name, age, gender);
         setEmployeeID(employeeID);
-        setJobTitile(jobTitile);
+        setJobTitle(jobTitle);
         setSalary(salary);
     }
 
@@ -31,12 +31,12 @@ public class Employee extends Person{
             this.employeeID = employeeID;
     }
 
-    public String getJobTitile() {
-        return jobTitile;
+    public String getJobTitle() {
+        return jobTitle;
     }
 
-    public void setJobTitile(String jobTitile) {
-        this.jobTitile = jobTitile;
+    public void setJobTitle(String jobTitile) {
+        this.jobTitle = jobTitile;
     }
 
     public double getSalary() {
@@ -44,6 +44,13 @@ public class Employee extends Person{
     }
 
     public void setSalary(double salary) {
+
+        if (salary <= 0) {
+            System.err.println("Invalid Salary: " + salary);
+
+            System.exit(1);
+        }
+
         this.salary = salary;
     }
 
@@ -53,13 +60,14 @@ public class Employee extends Person{
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Employee{" +
                 "name='" + getName() + '\'' +
                 ", age=" + getAge() +
                 ", gender=" + getGender() +
                 "employeeID=" + employeeID +
-                ", jobTitile='" + jobTitile + '\'' +
+                ", jobTitile='" + jobTitle + '\'' +
                 ", salary= £" + salary +
                 '}';
     }
